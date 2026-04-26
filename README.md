@@ -4,29 +4,29 @@
 The CPU is divided into four stages:
 
 ### IF (Instruction Fetch)
-  Program Counter updates instruction address
-  Instruction memory fetches instructions
+  -Program Counter updates instruction address
+  -Instruction memory fetches instructions
 ### ID (Instruction Decode)
-  Control signals generated from opcode
-  Register file reads operands
-  Immediate values prepared
+  -Control signals generated from opcode
+  -Register file reads operands
+  -Immediate values prepared
 ### EX (Execute)
-  ALU performs computation
-  Intermediate results generated
-  WB (Write Back)
-  ALU result written back to register file
-  Final output propagated
+  -ALU performs computation
+  -Intermediate results generated
+  -WB (Write Back)
+  -ALU result written back to register file
+  -Final output propagated
   
 ## Modules Implemented
-PC.v : Program Counter (from 3-stage pipelined CPU)
-memory.v : Instruction Memory
-control.v : Control Unit
-regfile.v: Register File
-ID_EXstage.v: ID to EX pipeline register (from 3-stage pipelined CPU)
-EXE_WBstage.v : EX to WB pipeline register
-alu.v : ALU
-pipelined_4stage.v : Top module (updated pipeline)
-define.v : Shared macros and parameters
+-PC.v : Program Counter (from 3-stage pipelined CPU)
+-memory.v : Instruction Memory
+-control.v : Control Unit
+-regfile.v: Register File
+-ID_EXstage.v: ID to EX pipeline register (from 3-stage pipelined CPU)
+-EXE_WBstage.v : EX to WB pipeline register
+-alu.v : ALU
+-pipelined_4stage.v : Top module (updated pipeline)
+-define.v : Shared macros and parameters
 
 ## Key Enhancements from 3-stage pipelined CPU
 - Added Write Back (WB) stage
