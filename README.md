@@ -1,4 +1,4 @@
-## This part extends the Part A design to a 4-stage pipelined processor by introducing an additional pipeline stage for improved modularity and timing performance.
+### This part extends the Part A design to a 4-stage pipelined processor by introducing an additional pipeline stage for improved modularity and timing performance.
 
 ## Pipeline Architecture
 The CPU is divided into four stages:
